@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Εφαρμογή 1 JavaScript</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<script>
+  document.write("<h1 style='text-align:center;'>Παράδειγμα σεναρίου <br> <em style='color:red;'>JavaScript</em></h1>");
+  document.write("<p><strong>Δημιουργήθηκε από το φοιτητή:</strong></p>");
+
+  var firstname;
+  firstname = "ΒΑΓΓΕΛΗΣ";
+  document.write(firstname + "<br>");
+  surname = "ΧΑΤΖΗΣΠΥΡΟΥ";
+  document.write(surname + "<br><br>");
+
+  function show_message() {
+    alert("Η JavaScript είναι εύκολη!!,ΜΑΛΛΟΝ");
+  }
+  document.write("<p><input id='btn' type='button' value='Εμφάνιση μηνύματος'></p>");
+  document.getElementById('btn').onclick = function () { show_message() };
+</script>
+</body>
+</html>
